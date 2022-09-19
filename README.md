@@ -6,7 +6,7 @@ access.
 
 The languages I used: HTML, CSS and JavaScript
 
-You can send me an email (nwokoriealex20@gmail.com) to request for the APK (android) version of this project. I'd forward it to you immediately for your testing. Btw, that also was done using the Andriod Visual Studio editor (some extra JAVA language was added though).
+You can send me an email (nwokoriealex20@gmail.com) to request for the APK (android) version of this project. I'd forward it to you immediately for your testing. Btw, that also was done using the Andriod Studio editor (some extra JAVA language was added though).
 
 Your feedbacks will be very much appreciated too :)
 
