@@ -1,6 +1,6 @@
 #LexisCode Simple Calculator App
 
-This was developed by me in the year 2021; and on learning Git/GitHub
+This was developed by me in the year 2020; and on learning Git/GitHub
 this year 2022, I've chosen to push it to the control system for public
 access.
 
