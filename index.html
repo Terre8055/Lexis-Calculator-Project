@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel='stylesheet' href='style.css' />
+    <script src='main.js' async></script>
+</head>
+<body>
+<div id='main'>
+    <h3 align='center' style='margin-bottom: 10px; font-size:1rem;'>CALCULATOR</h3>
+    <form name='form'>
+        <input class='textview' name='textview' disabled='yes'/>
+    </form>
+    <table>
+        <tr>
+            <td><input class='custom' type='button' value='C' onclick='clean(), playAudioo()'/></td>
+            <td><input class='custom' type='button' value='<' onclick='back(), playAudioo()'/></td>
+            <td><input class='custom' type='button' value='/' onclick='insert("/"), playAudioo()'/></td>
+            <td><input class='custom' type='button' value='x' onclick='insert("*"), playAudioo()'/></td>
+        </tr>
+        <tr>
+            <td><input class='button' type='button' value='7' onclick='insert(7), playAudioo()'/></td>
+            <td><input class='button' type='button' value='8' onclick='insert(8), playAudioo()'/></td>
+            <td><input class='button' type='button' value='9' onclick='insert(9), playAudioo()'/></td>
+            <td><input class='custom' type='button' value='-' onclick='insert("-"), playAudioo()'/></td>
+        </tr>
+        <tr>
+            <td><input class='button' type='button' value='4' onclick='insert(4), playAudioo()'/></td>
+            <td><input class='button' type='button' value='5' onclick='insert(5), playAudioo()'/></td>
+            <td><input class='button' type='button' value='6' onclick='insert(6), playAudioo()'/></td>
+            <td><input class='custom' type='button' value='+' onclick='insert("+"), playAudioo()'/></td>
+        </tr>
+        <tr>
+            <td><input class='button' type='button' value='1' onclick='insert(1), playAudioo()'/></td>
+            <td><input class='button' type='button' value='2' onclick='insert(2), playAudioo()'/></td>
+            <td><input class='button' type='button' value='3' onclick='insert(3), playAudioo()'/></td>
+            <td rowspan='5'><input class='custom-equal' style='height:106px;' type='button' value='=' onclick='equal(), playAudio()'></td>
+        </tr>
+        <tr>
+            <td><input class='button' type='button' value='0' onclick='insert(0), playAudioo()'/></td>
+            <td><input class='button' type='button' value='00' onclick='insert("00"), playAudioo()'/></td>
+            <td><input class='button' type='button' value='.' onclick='insert("."), playAudioo()'/></td>
+        </tr>
+    </table>
+    <p><i>Powered By: LexisCode</i></p>
+    <audio id='answer' src='Answer.mp3'></audio>
+    <audio id='intro' src='Intro.mp3'></audio>
+    <audio id='ticksound' src='Ticksound.mp3'></audio>
+</div>
+</body>
+</html>

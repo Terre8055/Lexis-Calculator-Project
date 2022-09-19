@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.custom{
+    width:50px;
+    height:50px;
+    font-size:25px;
+    margin:2px;
+    cursor: pointer;
+    background-color:rebeccapurple;
+    border:none;
+    color:white;
+}
+.custom-equal{
+    width:50px;
+    height:50px;
+    font-size:25px;
+    margin:2px;
+    cursor: pointer;
+    background-color:brown;
+    border:none;
+    color:white;
+}
+.button{
+    width:50px;
+    height:50px;
+    font-size:25px;
+    margin:2px;
+    cursor: pointer;
+    background-color:rgb(15, 15, 15);
+    border:none;
+    color:white;
+}
+.textview{
+    width:225px;
+    height:50px;
+    margin:5px;
+    font-size:25px;
+    padding:5px;
+    border:none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color:white;
+}
+#main{
+    position:absolute;
+    background-color:darkgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius:10px;
+}
+table{
+    margin-top:-30px;
+}
+#main p{
+    color:white;
+    font-size:0.8rem;
+    text-align: center;
+}
