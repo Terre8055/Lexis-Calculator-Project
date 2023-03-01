@@ -1,38 +1,39 @@
-const cal = document.form.textview.value
-function insert(num){
-    document.form.textview.value = document.form.textview.value + num;
+const textview = document.form.textview; //Assign the class attribute 'textview to the variable
+const answerAudio = document.getElementById('answer'); //Audio for Equals button
+const tickSoundAudio = document.getElementById('ticksound');//Audio for all buttons except (=)
+const introAudio = document.getElementById('intro');//To be played upon window onload
+
+
+function insert(key){
+    textview.value += key;
 }
+
 function equal(){
-    var exp = document.form.textview.value;
-    if(exp){
-        document.form.textview.value = eval(exp)
+    const keyExpression = textview.value;
+    if(keyExpression){ //Evaluate textview field if not empty
+        textview.value = eval(keyExpression)
     }
 }
-function clean(){
-    document.form.textview.value = '';
-}
-function back(){
-    var exp = document.form.textview.value;
-    document.form.textview.value = exp.substring(0,exp.length-1);
+
+function clearScreen(){
+    textview.value = ''
 }
 
+function backSpace(){
+    const keyExpression = textview.value;
+    textview.value = keyExpression.substring(0, keyExpression.length-1);
+}
 
 
+function playAnswerAudio(){
+    answerAudio.play();
+}
 
-//The EqualTo button plays Answer Audio
-const x = document.getElementById('answer');
 
-function playAudio(){
-        x.play()
-};
-//The rest buttons plays Ticksound Audio
-const y = document.getElementById('ticksound');
+function playTickSoundAudio(){
+    tickSoundAudio.play();
+}
 
-function playAudioo(){
-        y.play()
-};
-//On windowload autoplay Intro Audio
-const z = document.getElementById('intro');
-window.onload = function playAudio(){
-    z.play()
+window.onload = function() {
+    introAudio.play();
 };
